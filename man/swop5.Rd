@@ -4,13 +4,15 @@
 \name{swop5}
 \alias{swop5}
 \title{Strict Weak Order Polytope for 5 Elements and Ternary Choices}
-\format{A list with 3 elements:
+\format{
+A list with 3 elements:
 \describe{
   \item{\code{A}: }{Matrix with inequality constraints that define a polytope via \code{A*x <= b}.}
   \item{\code{b}: }{vector with upper bounds for the inequalities.}
   \item{\code{start}: }{A point in the polytope.}
   \item{\code{options}: }{A vector with the number of options (=3) per item type.}
-}}
+}
+}
 \usage{
 swop5
 }
@@ -33,13 +35,13 @@ inside(swop5$start, swop5$A, swop5$b)
 # get prior samples:
 p <- sampling_multinom(0, swop5$options,
                        swop5$A, swop5$b,
-                       M = 1000, start = swop5$start)
+                       M = 100, start = swop5$start)
 colMeans(p)
 apply(p[,1:5], 2, plot, type = "l")
 }
 }
 \references{
-Regenwetter, M., & Davis-Stober, C. P. (2012). Behavioral variability of choices versus structural inconsistency of preferences. Psychological Review, 119(2), 408-416. \url{https://doi.org/10.1037/a0027372}
+Regenwetter, M., & Davis-Stober, C. P. (2012). Behavioral variability of choices versus structural inconsistency of preferences. Psychological Review, 119(2), 408-416. \doi{10.1037/a0027372}
 }
 \seealso{
 The corresponding data set \code{\link{regenwetter2012}}.

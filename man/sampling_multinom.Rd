@@ -5,11 +5,34 @@
 \alias{sampling_binom}
 \title{Posterior Sampling for Inequality-Constrained Multinomial Models}
 \usage{
-sampling_multinom(k, options, A, b, V, prior = rep(1, sum(options)),
-  M = 5000, start, burnin = 10, progress = TRUE, cpu = 1)
+sampling_multinom(
+  k,
+  options,
+  A,
+  b,
+  V,
+  prior = rep(1, sum(options)),
+  M = 5000,
+  start,
+  burnin = 10,
+  progress = TRUE,
+  cpu = 1
+)
 
-sampling_binom(k, n, A, b, V, map = 1:ncol(A), prior = c(1, 1),
-  M = 5000, start, burnin = 10, progress = TRUE, cpu = 1)
+sampling_binom(
+  k,
+  n,
+  A,
+  b,
+  V,
+  map = 1:ncol(A),
+  prior = c(1, 1),
+  M = 5000,
+  start,
+  burnin = 10,
+  progress = TRUE,
+  cpu = 1
+)
 }
 \arguments{
 \item{k}{the number of choices for each alternative ordered by item type (e.g.
@@ -110,7 +133,7 @@ head(samp)
 plot(samp)
 }
 \references{
-Myung, J. I., Karabatsos, G., & Iverson, G. J. (2005). A Bayesian approach to testing decision making axioms. \emph{Journal of Mathematical Psychology, 49}, 205-225. \url{https://doi.org/10.1016/j.jmp.2005.02.004}
+Myung, J. I., Karabatsos, G., & Iverson, G. J. (2005). A Bayesian approach to testing decision making axioms. \emph{Journal of Mathematical Psychology, 49}, 205-225. \doi{10.1016/j.jmp.2005.02.004}
 }
 \seealso{
 \code{\link{count_multinom}}, \code{\link{ml_multinom}}

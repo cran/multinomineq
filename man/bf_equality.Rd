@@ -4,9 +4,20 @@
 \alias{bf_equality}
 \title{Bayes Factor with Inequality and (Approximate) Equality Constraints}
 \usage{
-bf_equality(k, options, A, b, C, d, prior = rep(1, sum(options)),
-  M1 = 1e+05, M2 = 20000, delta = 0.5^(1:8), return_Ab = FALSE,
-  ...)
+bf_equality(
+  k,
+  options,
+  A,
+  b,
+  C,
+  d,
+  prior = rep(1, sum(options)),
+  M1 = 1e+05,
+  M2 = 20000,
+  delta = 0.5^(1:8),
+  return_Ab = FALSE,
+  ...
+)
 }
 \arguments{
 \item{k}{the number of choices for each alternative ordered by item type (e.g.
@@ -77,5 +88,5 @@ bf_binom(k_binom, n = 10, A = matrix(0), b = 0,
          map = c(0, 0, 1, 1))
 }
 \references{
-Klugkist, I., Laudy, O., & Hoijtink, H. (2010). Bayesian evaluation of inequality and equality constrained hypotheses for contingency tables. Psychological Methods, 15(3), 281-299. \url{https://doi.org/10.1037/a0020137}
+Klugkist, I., Laudy, O., & Hoijtink, H. (2010). Bayesian evaluation of inequality and equality constrained hypotheses for contingency tables. Psychological Methods, 15(3), 281-299. \doi{10.1037/a0020137}
 }

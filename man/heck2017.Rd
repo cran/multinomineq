@@ -4,13 +4,15 @@
 \name{heck2017}
 \alias{heck2017}
 \title{Data: Multiattribute Decisions (Heck, Hilbig & Moshagen, 2017)}
-\format{A data frame 4 variables:
+\format{
+A data frame 4 variables:
 \describe{
   \item{\code{B1}}{Frequency of choosing Option B for Item Type 1}
   \item{\code{B2}}{Frequency of choosing Option B for Item Type 2}
   \item{\code{B3}}{Frequency of choosing Option B for Item Type 3}
   \item{\code{B4}}{Frequency of choosing Option B for Item Type 4}
-}}
+}
+}
 \usage{
 heck2017
 }
@@ -56,6 +58,6 @@ strats <- strategy_multiattribute(cueA, cueB, v, strategies)
 strategy_postprob(heck2017[1:4,], n, strats)
 }
 \references{
-Heck, D. W., Hilbig, B. E., & Moshagen, M. (2017). From information processing to decisions: Formalizing and comparing probabilistic choice models. Cognitive Psychology, 96, 26-40. \url{https://doi.org/10.1016/j.cogpsych.2017.05.003}
+Heck, D. W., Hilbig, B. E., & Moshagen, M. (2017). From information processing to decisions: Formalizing and comparing probabilistic choice models. Cognitive Psychology, 96, 26-40. \doi{10.1016/j.cogpsych.2017.05.003}
 }
 \keyword{datasets}

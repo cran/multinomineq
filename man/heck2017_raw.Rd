@@ -4,7 +4,8 @@
 \name{heck2017_raw}
 \alias{heck2017_raw}
 \title{Data: Multiattribute Decisions (Heck, Hilbig & Moshagen, 2017)}
-\format{A data frame with 21 variables:
+\format{
+A data frame with 21 variables:
 \describe{
   \item{\code{vp}}{ID code of participant}
   \item{\code{trial}}{Trial index}
@@ -27,7 +28,8 @@
   \item{\code{b2}}{Value of Cue 2 for Option B}
   \item{\code{b3}}{Value of Cue 3 for Option B}
   \item{\code{b4}}{Value of Cue 4 for Option B}
-}}
+}
+}
 \usage{
 heck2017_raw
 }
@@ -72,7 +74,7 @@ round(pp, 3)
 }
 }
 \references{
-Heck, D. W., Hilbig, B. E., & Moshagen, M. (2017). From information processing to decisions: Formalizing and comparing probabilistic choice models. Cognitive Psychology, 96, 26-40. \url{https://doi.org/10.1016/j.cogpsych.2017.05.003}
+Heck, D. W., Hilbig, B. E., & Moshagen, M. (2017). From information processing to decisions: Formalizing and comparing probabilistic choice models. Cognitive Psychology, 96, 26-40. \doi{10.1016/j.cogpsych.2017.05.003}
 }
 \seealso{
 \code{\link{heck2017}} for the aggregated choice frequencies per item type.

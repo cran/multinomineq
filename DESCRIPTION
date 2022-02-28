@@ -2,10 +2,11 @@ Package: multinomineq
 Type: Package
 Title: Bayesian Inference for Multinomial Models with Inequality
         Constraints
-Version: 0.2.1
-Date: 2019-05-16
-Authors@R: person("Daniel W.", "Heck", email="heck@uni-mannheim.de", role=c("aut","cre"))
-Maintainer: Daniel W. Heck <heck@uni-mannheim.de>
+Version: 0.2.3
+Date: 2022-02-22
+Authors@R: person("Daniel W.", "Heck", email="dheck@uni-marburg.de", 
+                  role=c("aut","cre"), comment = c(ORCID = "0000-0002-6302-9252"))
+Maintainer: Daniel W. Heck <dheck@uni-marburg.de>
 Description: 
     Implements Gibbs sampling and Bayes factors for multinomial models with
     linear inequality constraints on the vector of probability parameters. As
@@ -37,10 +38,10 @@ Imports: Rcpp (>= 0.12.11), parallel, Rglpk, quadprog, coda,
 Suggests: rPorta, knitr, testthat, covr
 LinkingTo: Rcpp, RcppArmadillo, RcppProgress
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.2
 Additional_repositories: https://danheck.github.io/drat/
 NeedsCompilation: yes
-Packaged: 2019-05-16 12:58:53 UTC; Daniel
-Author: Daniel W. Heck [aut, cre]
+Packaged: 2022-02-22 13:39:56 UTC; daniel
+Author: Daniel W. Heck [aut, cre] (<https://orcid.org/0000-0002-6302-9252>)
 Repository: CRAN
-Date/Publication: 2019-05-16 16:30:12 UTC
+Date/Publication: 2022-02-28 13:40:06 UTC

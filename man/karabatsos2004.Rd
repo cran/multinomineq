@@ -4,14 +4,16 @@
 \name{karabatsos2004}
 \alias{karabatsos2004}
 \title{Data: Item Responses Theory (Karabatsos & Sheu, 2004)}
-\format{A list with 4 matrices:
+\format{
+A list with 4 matrices:
 \describe{
   \item{\code{k.M}: }{Number of correct responses for participants with rest scores
       j=0,...,5 (i.e., the sum score minus the score for item i)}
   \item{\code{n.M}: }{Total number of participants for each cell of matrix \code{k.M}}
   \item{\code{k.IIO}: }{Number of correct responses for participants with sum scores j=0,...,6}
   \item{\code{n.IIO}: }{Total number of participants for each cell of matrix \code{k.IIO}}
-}}
+}
+}
 \usage{
 karabatsos2004
 }
@@ -67,7 +69,7 @@ ppp <- ppp_binom(p, c(karabatsos2004$k.IIO), c(karabatsos2004$n.IIO),
 round(ppp[,3], 2)
 }
 \references{
-Karabatsos, G., & Sheu, C.-F. (2004). Order-constrained Bayes inference for dichotomous models of unidimensional nonparametric IRT. Applied Psychological Measurement, 28(2), 110-125. \url{https://doi.org/10.1177/0146621603260678}
+Karabatsos, G., & Sheu, C.-F. (2004). Order-constrained Bayes inference for dichotomous models of unidimensional nonparametric IRT. Applied Psychological Measurement, 28(2), 110-125. \doi{10.1177/0146621603260678}
 }
 \seealso{
 The polytope for the nonparametric item response theory can be obtained

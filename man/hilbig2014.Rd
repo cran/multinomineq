@@ -4,12 +4,14 @@
 \name{hilbig2014}
 \alias{hilbig2014}
 \title{Data: Multiattribute Decisions (Hilbig & Moshagen, 2014)}
-\format{A data frame 3 variables:
+\format{
+A data frame 3 variables:
 \describe{
   \item{\code{B1}}{Frequency of choosing Option B for Item Type 1}
   \item{\code{B2}}{Frequency of choosing Option B for Item Type 2}
   \item{\code{B3}}{Frequency of choosing Option B for Item Type 3}
-}}
+}
+}
 \usage{
 hilbig2014
 }
@@ -52,6 +54,6 @@ n <- rep(32, 3)
 strategy_postprob(k = hilbig2014[1:5,], n, preds)
 }
 \references{
-Hilbig, B. E., & Moshagen, M. (2014). Generalized outcome-based strategy classification: Comparing deterministic and probabilistic choice models. Psychonomic Bulletin & Review, 21(6), 1431-1443. \url{https://doi.org/10.3758/s13423-014-0643-0}
+Hilbig, B. E., & Moshagen, M. (2014). Generalized outcome-based strategy classification: Comparing deterministic and probabilistic choice models. Psychonomic Bulletin & Review, 21(6), 1431-1443. \doi{10.3758/s13423-014-0643-0}
 }
 \keyword{datasets}
