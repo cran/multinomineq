@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ```
 
 
-<img src="../man/figures/multinomineq.png" width="150" align="right" hspace="20" style="border:0px">
+<img src="../man/figures/multinomineq.png" width="150" style="float: right;  border: 0px">
 
 The R package `multinomineq` facilitates the Bayesian analysis of discrete/categorical data using multinomial models with inequality constraints.
 Essentially, these types of models allow to analyze discrete choice frequencies while assuming that the corresponding choice probabilities $\theta$ are constrained by linear inequality constraints (e.g., by the simple order $\theta_{1} \leq \theta_{2}\leq \theta_{3}\leq \theta_{4}$).
@@ -35,15 +35,10 @@ In the experiment, participants had to choose one of two risky gambles in each o
 The description-experience gap states that people underweigh small probabilities $p$ when making decisions based on experience.
 We will conduct a reanalysis of Hertwig's data set using the inequality-constrained multinomial model in Regenwetter & Robinson (2017).
 
-First, it is necessary to install the R package `multinomineq` from Github.
-Note that it is necessary to install the developer R tools first (see https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites).
-Afterwards, `multinomineq` can be installed and loaded via:
+First, it is necessary to install and load the R package `multinomineq`:
 
 ```{r}
-### uncomment to install packages:
-# install.packages("devtools", "coda", "RcppArmadillo", "RcppProgress", "Rglpk", "quadprog")
-# devtools::install_github("danheck/multinomineq")
-
+# install.packages("multinomineq")
 library("multinomineq")
 library("coda")
 set.seed(1234)
@@ -155,10 +150,10 @@ find_inside(A, b, random = TRUE)
 ```
 
 Note that it is sometimes possible to convert the vertex ($V$-)representation (convex hull) to the inequality ($Ab$-)representation using specific software.
-To do this in R, it is necessary to install the package `rPorta` from Github:
+For older R versions (before 4.0.0), this could be done with the package `rPorta` from Github:
 
 ```{r, eval = FALSE}
-### (not run):
+### (not functional for R >= 4.0.0):
 devtools::install_github("TasCL/rPorta")
 Ab <- V_to_Ab(V)
 Ab 

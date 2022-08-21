@@ -5,10 +5,7 @@ knitr::opts_chunk$set(
   )
 
 ## -----------------------------------------------------------------------------
-### uncomment to install packages:
-# install.packages("devtools", "coda", "RcppArmadillo", "RcppProgress", "Rglpk", "quadprog")
-# devtools::install_github("danheck/multinomineq")
-
+# install.packages("multinomineq")
 library("multinomineq")
 library("coda")
 set.seed(1234)
@@ -75,7 +72,7 @@ inside(p_observed, A, b)
 find_inside(A, b, random = TRUE)
 
 ## ---- eval = FALSE------------------------------------------------------------
-#  ### (not run):
+#  ### (not functional for R >= 4.0.0):
 #  devtools::install_github("TasCL/rPorta")
 #  Ab <- V_to_Ab(V)
 #  Ab
