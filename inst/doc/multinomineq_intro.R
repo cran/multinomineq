@@ -82,13 +82,13 @@ inside(p_observed, A, b)
 # find a point that satisfies the constraints:
 find_inside(A, b, random = TRUE)
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  ### (not functional for R >= 4.0.0):
 #  devtools::install_github("TasCL/rPorta")
 #  Ab <- V_to_Ab(V)
 #  Ab
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  # fit data from Description and Experience condition:
 #  p_D <- sampling_binom(k = HER_desc, n = n, V = V, M = 2000, progress = FALSE)
 #  p_E <- sampling_binom(k = HER_exp, n = n, V = V, M = 2000, progress = FALSE)
@@ -104,7 +104,7 @@ p_E <- sampling_binom(
   M = 2000, progress = FALSE
 )
 
-## ---- fig.width=7, fig.height=5.5---------------------------------------------
+## ----fig.width=7, fig.height=5.5----------------------------------------------
 # check convergence of MCMC sampler (should look like hairy caterpillars):
 plot(p_D)
 # summarize posterior samples:
